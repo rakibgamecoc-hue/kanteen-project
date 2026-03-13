@@ -1,1 +1,2 @@
 # kanteen-project
+A well tried clone of official website of Kanteenlife.com I used only html and raw CSS to desgin the weebsite. I used AI to help me bulding this website responsive tough its not that compact it still shrinks the images in between 1000px to 800px. If anyone want to commit or do this project beter. You are welcome and you can see thier offical site for your reference. https://www.kanteenlife.com/
