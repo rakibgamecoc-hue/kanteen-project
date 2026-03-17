@@ -1,0 +1,336 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__title{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;  
+}
+
+.nav__link{
+    text-decoration: none;
+    font-weight: 800;
+    color: rgba(35, 36, 33, 0.609);
+    font-size: 1.2em;
+    cursor: pointer;
+   
+}
+a:hover{
+    color: rgba(13, 22, 29, 0.572);
+}
+
+a:active{
+    color: rgb(229, 141, 41);
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__login{
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.609);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.social-icons__facebook,
+.social-icons__instagram{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.intro-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+}
+
+.intro-section__banner{
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.section-divider{
+    border: none;
+    height: 6px;
+    background-color: #ccc;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.party-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.party-box__image{
+    width: 100%;
+}
+
+.party-box__img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.party-box__text{
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    width: 100%;
+    padding-left: 6rem;
+}
+
+.party-box__text h2{
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.party-box__text p{
+    max-width: 48ch;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+    nav{
+        padding: 1.25rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-icons{
+        justify-content: flex-start;
+    }
+
+    .intro-section{
+        padding: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.15rem;
+    }
+
+    .intro-section__banner{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .party-box{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .party-box__image,
+    .party-box__text{
+        width: 100%;
+    }
+    .party-box__text{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+/* default image size */
+
+
+.images{
+    height: 70vh;
+    width: 25vw;
+    margin: 28px;
+}
+.image_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center; 
+    gap: 20px;
+    max-width:90vw;
+    padding-left: 4.5rem;
+}
+
+.deco_image1 , .deco_image2 , .deco_image3{
+    margin-top: 3.5rem;
+}
+
+.deco_image1 , .deco_image2 , .deco_image4 , .deco_image5{
+    height: 85vh;
+}
+
+.deco_image3{
+    height: 68vh;
+    width: 26vw;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 800px) {
+    .image_section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .images{
+        width: 100%;
+        height: auto;
+        margin: 28px 0;
+    }
+}
+
+
+.drip__coffe__text, .need__this__button, .sub{
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.drip_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+.drip__coffe__image{
+    width: 60%;
+    margin-left: 7em;
+    
+}
+
+.drip__coffe__text{
+    line-height: 1.5em;
+    margin-right: 7em;
+    font-weight: 800;
+    font-size:x-large;
+    
+}
+.drip__headline{
+    font-weight:320;
+    margin-bottom:1.3em;
+}
+.drip__tagline{
+     font-weight:500;
+}
+.drip__title{
+    margin-bottom: .2em;
+}
+.line_break{
+    display: block;
+    line-height: 3em;
+}
+
+@media (max-width: 800px) {
+.drip_section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;}
+
+.drip__coffe__text{
+    margin-top: 1.5em;
+    margin-right: 0;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.drip__coffe__image{
+    margin-left: 0;
+}
+}
+.need__this__button{
+    padding: 1.3em;
+    border: 1px solid black;
+    margin-top: 1.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: medium;
+    opacity: 40%;
+    font-weight: 600;
+    cursor:pointer;
+}
+.footer__links{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: .9em;
+    margin-top: 4em;
+    flex-wrap: wrap;
+}
+.sub{
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: rgba(0, 0, 0, 0.46);
+    font-size: x-large;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    padding-bottom: 2px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.footer__links .sub:not(:last-child)::after{
+    content: "•";
+    color: #000;
+    font-size: 1.2em;
+    margin-left: 0.9em;
+}
+.company__registration__text{
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    word-spacing: 3px;
+    margin-bottom: 3em;
+    font-weight: 400;
+}
