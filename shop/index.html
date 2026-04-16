@@ -1,38 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanteen's shopping page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-          <header role="banner" aria-label="Kanteen header">
-        <h1 class="header__title">Kanteen</h1>
+    <header role="banner" aria-label="Kanteen header">
+        <h1 class="header__title">
+            <a class="header__home-link" href="../index.html">Kanteen</a>
+        </h1>
     </header>
 
     <nav role="navigation" aria-label="Primary">
-        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span class="nav__toggle-icon">≡</span>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-panel"
+            aria-expanded="false">
+            <span class="nav__toggle-icon">&#9776;</span>
         </button>
-        <div class="nav-list">
-            <a class="nav__link" href="#shop">Shop</a>
-            <a class="nav__link" href="#menu">Menu</a>
-            <a class="nav__link" href="#our-story">Our Story</a>
-        </div>
+        <div class="nav-panel" id="nav-panel">
+            <div class="nav-list">
+                <a class="nav__link" href="./index.html">Shop</a>
+                <a class="nav__link" href="../index.html#menu">Menu</a>
+                <a class="nav__link" href="../index.html#our-story">Our Story</a>
+            </div>
 
-        <div class="nav-icons">
-            <button class="nav__login" type="button">Login</button>
-            <a class="social-icons__facebook" href="https://web.facebook.com/kanteenrestaurant" target="_blank"
-                rel="noopener noreferrer" aria-label="Kanteen on Facebook">
-                <img src="https://cdn.simpleicons.org/facebook" width="24" height="24" alt="Kanteen on Facebook">
-            </a>
-            <a class="social-icons__instagram" href="https://www.instagram.com/kanteen_/?hl=en" target="_blank"
-                rel="noopener noreferrer" aria-label="Kanteen on Instagram">
-                <img src="https://cdn.simpleicons.org/instagram" width="24" height="24" alt="Kanteen on Instagram">
-            </a>
+            <div class="nav-icons">
+                <button class="nav__login" type="button">Login</button>
+                <a class="social-icons__facebook" href="https://web.facebook.com/kanteenrestaurant" target="_blank"
+                    rel="noopener noreferrer" aria-label="Kanteen on Facebook">
+                    <img src="https://cdn.simpleicons.org/facebook" width="24" height="24" alt="Kanteen on Facebook">
+                </a>
+                <a class="social-icons__instagram" href="https://www.instagram.com/kanteen_/?hl=en" target="_blank"
+                    rel="noopener noreferrer" aria-label="Kanteen on Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram" width="24" height="24" alt="Kanteen on Instagram">
+                </a>
+            </div>
         </div>
     </nav>
-    </header>
+    <button class="nav-backdrop" type="button" aria-label="Close navigation"></button>
+
+    <div class="secondary-nav shop-categories">
+        <h1 class="shop-categories__title">Shop</h1>
+        <ul class="nested-category-children">
+            <li><a href="#" class="category-link">All</a></li>
+            <li><a href="#" class="category-link">Party boxes</a></li>
+            <li><a href="#" class="category-link">Mart</a></li>
+            <li><a href="#" class="category-link">Marchandise</a></li>
+        </ul>
+    </div>
+    <main class="product-grid">
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/fdd40fa8-8505-46b7-a080-88c029b08642/R6C28969.jpg"
+                alt="JG TomYum Sauce">
+            <figcaption class="product-card__title">JG TomYum Sauce</figcaption>
+            <p class="product-card__description">Authentic Thai Tom Yum sauce for your culinary adventures.</p>
+        </figure>
+
+        <figure class="product-card" data-category="party-boxes">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/e347ede5-8f88-4553-8e9b-b763b6cbf5c6/97FF64E5-0D27-4E3D-A808-6BE8F9CDB370.JPG"
+                alt="Just Bagels Box">
+            <figcaption class="product-card__title">Just Bagels Box</figcaption>
+            <p class="product-card__description">Delicious assortment of freshly baked bagels for your party.</p>
+        </figure>
+
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/7d9d4e8d-9c90-47f1-829a-c7112d17d920/6105FAC9-45F2-45C1-B1D8-BB1C40390F71.JPG"
+                alt="Sliders & Fries">
+            <figcaption class="product-card__title">Sliders & Fries</figcaption>
+            <p class="product-card__description">Juicy sliders paired with crispy fries for ultimate comfort food.</p>
+        </figure>
+
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/1c1fa48b-b36c-4c0d-917f-317e3a58efcb/695C3DD7-AA73-48D8-B9D6-B0AB061BA07B.JPG"
+                alt="The Bites Delight">
+            <figcaption class="product-card__title">The Bites Delight</figcaption>
+            <p class="product-card__description">A delightful selection of bite-sized treats to satisfy your cravings.
+            </p>
+        </figure>
+
+        <figure class="product-card" data-category="party-boxes">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/eb29373e-83b9-4e91-8e13-9198502c570d/30A5F6AA-7421-483C-8BE3-32D2DAB6F95D.JPG"
+                alt="Croissant Crush Box">
+            <figcaption class="product-card__title">Croissant Crush Box</figcaption>
+            <p class="product-card__description">Flaky, buttery croissants perfect for any gathering.</p>
+        </figure>
+
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/e2119595-99cd-4f94-922c-239269b6240c/55262CC7-D588-47E5-BA31-CEF4F2C18FE7.JPG"
+                alt="Rise & Wrap">
+            <figcaption class="product-card__title">Rise & Wrap</figcaption>
+            <p class="product-card__description">Healthy wraps with fresh ingredients for a quick meal.</p>
+        </figure>
+
+        <figure class="product-card" data-category="party-boxes">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/9738c46d-076a-44bf-8be3-91263879023f/0823659E-8CAB-45DE-A4BB-30ED5C69633F.JPG"
+                alt="The Sarapan Box">
+            <figcaption class="product-card__title">The Sarapan Box</figcaption>
+            <p class="product-card__description">Traditional breakfast items in a convenient box.</p>
+        </figure>
+
+        <figure class="product-card" data-category="party-boxes">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/9919c7e9-8b39-4975-8a61-1ae7b060afaf/A35332AF-DD15-49E3-884B-646943A24323+%281%29.JPG"
+                alt="Sweet Stack Box">
+            <figcaption class="product-card__title">Sweet Stack Box</figcaption>
+            <p class="product-card__description">A stack of sweet treats for dessert lovers.</p>
+        </figure>
+
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/1694674624201-W16221AR8DT1FM1595XF/Untitled+%28240+%C3%97+400+px%29+%281%29.png"
+                alt="Morning Glow Drip Coffee">
+            <figcaption class="product-card__title">Morning Glow Drip Coffee</figcaption>
+            <p class="product-card__description">Smooth drip coffee to start your day right.</p>
+        </figure>
+
+        <figure class="product-card" data-category="mart">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/1623663104349-IIBYG0UYK6MG8QA864HV/IMG_1235.JPG"
+                alt="Coffee Beans 100% Arabica">
+            <figcaption class="product-card__title">Coffee Beans 100% Arabica</figcaption>
+            <p class="product-card__description">Premium 100% Arabica coffee beans for brewing perfection.</p>
+        </figure>
+
+        <figure class="product-card" data-category="marchandise">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/1589174150626-WLCLWXZHG6QJHN3FLRAM/59611DF9-0F89-4AE3-B6F9-B02E6FB7B6DC.JPG"
+                alt="Not A Morning Person Tote Bag">
+            <figcaption class="product-card__title">Not A Morning Person Tote Bag</figcaption>
+            <p class="product-card__description">Humorous tote bag for coffee lovers who hate mornings.</p>
+        </figure>
+
+        <figure class="product-card" data-category="marchandise">
+            <img class="product-card__image"
+                src="https://images.squarespace-cdn.com/content/v1/5e9fc9f19e41a12cfe20c6b9/1589174273514-G85JL0124ZS9E07H9Y02/6773C1BF-D368-41B6-88D3-47FCCB9B618B.JPG"
+                alt="Hakuna Ma Coffee Tote Bag">
+            <figcaption class="product-card__title">Hakuna Ma Coffee Tote Bag</figcaption>
+            <p class="product-card__description">Relaxing tote bag with a coffee twist.</p>
+        </figure>
+    </main>
+    <footer class="footer__links">
+        <a href="#" class="sub footer__links__menu">Menu</a>
+        <a href="#" class="sub footer__links__contacts">Contacts</a>
+        <a href="#" class="sub footer__links__locations">Locations</a>
+        <a href="#" class="sub footer__links__tcs">T&Cs</a>
+    </footer>
+    <div class="company">
+        <p class="company__registration__text">Sambal Chilli Sdn Bhd (1012751-U)</p>
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
