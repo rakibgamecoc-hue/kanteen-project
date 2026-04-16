@@ -17,31 +17,36 @@
 
 <body>
     <header role="banner" aria-label="Kanteen header">
-        <h1 class="header__title">Kanteen</h1>
+        <h1 class="header__title">
+            <a class="header__home-link" href="./index.html">Kanteen</a>
+        </h1>
     </header>
 
     <nav role="navigation" aria-label="Primary">
-        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span class="nav__toggle-icon">≡</span>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-panel" aria-expanded="false">
+            <span class="nav__toggle-icon">&#9776;</span>
         </button>
-        <div class="nav-list">
-            <a class="nav__link" href="/shop/index.html" target="_self">Shop</a>
-            <a class="nav__link" href="#menu">Menu</a>
-            <a class="nav__link" href="#our-story">Our Story</a>
-        </div>
+        <div class="nav-panel" id="nav-panel">
+            <div class="nav-list">
+                <a class="nav__link" href="./shop/index.html">Shop</a>
+                <a class="nav__link" href="#menu">Menu</a>
+                <a class="nav__link" href="#our-story">Our Story</a>
+            </div>
 
-        <div class="nav-icons">
-            <button class="nav__login" type="button">Login</button>
-            <a class="social-icons__facebook" href="https://web.facebook.com/kanteenrestaurant" target="_blank"
-                rel="noopener noreferrer" aria-label="Kanteen on Facebook">
-                <img src="https://cdn.simpleicons.org/facebook" width="24" height="24" alt="Kanteen on Facebook">
-            </a>
-            <a class="social-icons__instagram" href="https://www.instagram.com/kanteen_/?hl=en" target="_blank"
-                rel="noopener noreferrer" aria-label="Kanteen on Instagram">
-                <img src="https://cdn.simpleicons.org/instagram" width="24" height="24" alt="Kanteen on Instagram">
-            </a>
+            <div class="nav-icons">
+                <button class="nav__login" type="button">Login</button>
+                <a class="social-icons__facebook" href="https://web.facebook.com/kanteenrestaurant" target="_blank"
+                    rel="noopener noreferrer" aria-label="Kanteen on Facebook">
+                    <img src="https://cdn.simpleicons.org/facebook" width="24" height="24" alt="Kanteen on Facebook">
+                </a>
+                <a class="social-icons__instagram" href="https://www.instagram.com/kanteen_/?hl=en" target="_blank"
+                    rel="noopener noreferrer" aria-label="Kanteen on Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram" width="24" height="24" alt="Kanteen on Instagram">
+                </a>
+            </div>
         </div>
     </nav>
+    <button class="nav-backdrop" type="button" aria-label="Close navigation"></button>
 
     <main>
         <section id="our-story" class="intro-section">
@@ -147,5 +152,5 @@
     </footer>
     <div class="company"><p class="company__registration__text">Sambal Chilli Sdn Bhd (1012751-U)</p></div>
 </body>
-
+<script src="script.js"></script>
 </html>
