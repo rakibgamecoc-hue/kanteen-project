@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanteen's shopping page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 </head>
 
 <body>
@@ -58,6 +60,7 @@
                 alt="JG TomYum Sauce">
             <figcaption class="product-card__title">JG TomYum Sauce</figcaption>
             <p class="product-card__description">Authentic Thai Tom Yum sauce for your culinary adventures.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="party-boxes">
@@ -66,6 +69,13 @@
                 alt="Just Bagels Box">
             <figcaption class="product-card__title">Just Bagels Box</figcaption>
             <p class="product-card__description">Delicious assortment of freshly baked bagels for your party.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
+            <div class="quantity-counter" style="display: none;">
+                <button class="minus">-</button>
+                <input type="number" value="1" min="1">
+                <button class="plus">+</button>
+            </div>
+
         </figure>
 
         <figure class="product-card" data-category="mart">
@@ -74,6 +84,7 @@
                 alt="Sliders & Fries">
             <figcaption class="product-card__title">Sliders & Fries</figcaption>
             <p class="product-card__description">Juicy sliders paired with crispy fries for ultimate comfort food.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="mart">
@@ -83,6 +94,7 @@
             <figcaption class="product-card__title">The Bites Delight</figcaption>
             <p class="product-card__description">A delightful selection of bite-sized treats to satisfy your cravings.
             </p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="party-boxes">
@@ -91,6 +103,7 @@
                 alt="Croissant Crush Box">
             <figcaption class="product-card__title">Croissant Crush Box</figcaption>
             <p class="product-card__description">Flaky, buttery croissants perfect for any gathering.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="mart">
@@ -99,6 +112,7 @@
                 alt="Rise & Wrap">
             <figcaption class="product-card__title">Rise & Wrap</figcaption>
             <p class="product-card__description">Healthy wraps with fresh ingredients for a quick meal.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="party-boxes">
@@ -107,6 +121,7 @@
                 alt="The Sarapan Box">
             <figcaption class="product-card__title">The Sarapan Box</figcaption>
             <p class="product-card__description">Traditional breakfast items in a convenient box.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="party-boxes">
@@ -115,6 +130,7 @@
                 alt="Sweet Stack Box">
             <figcaption class="product-card__title">Sweet Stack Box</figcaption>
             <p class="product-card__description">A stack of sweet treats for dessert lovers.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="mart">
@@ -123,6 +139,7 @@
                 alt="Morning Glow Drip Coffee">
             <figcaption class="product-card__title">Morning Glow Drip Coffee</figcaption>
             <p class="product-card__description">Smooth drip coffee to start your day right.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="mart">
@@ -131,6 +148,7 @@
                 alt="Coffee Beans 100% Arabica">
             <figcaption class="product-card__title">Coffee Beans 100% Arabica</figcaption>
             <p class="product-card__description">Premium 100% Arabica coffee beans for brewing perfection.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="marchandise">
@@ -139,6 +157,7 @@
                 alt="Not A Morning Person Tote Bag">
             <figcaption class="product-card__title">Not A Morning Person Tote Bag</figcaption>
             <p class="product-card__description">Humorous tote bag for coffee lovers who hate mornings.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
 
         <figure class="product-card" data-category="marchandise">
@@ -147,6 +166,7 @@
                 alt="Hakuna Ma Coffee Tote Bag">
             <figcaption class="product-card__title">Hakuna Ma Coffee Tote Bag</figcaption>
             <p class="product-card__description">Relaxing tote bag with a coffee twist.</p>
+            <span class="material-symbols-outlined cart"> shopping_cart </span>
         </figure>
     </main>
     <footer class="footer__links">

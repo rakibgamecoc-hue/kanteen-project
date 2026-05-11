@@ -1,2 +1,9 @@
-# kanteen-project
-A well tried clone of official website of Kanteenlife.com I used only html and raw CSS to desgin the weebsite. I used AI to help me bulding this website responsive tough its not that compact it still shrinks the images in between 1000px to 800px. If anyone want to commit or do this project beter. You are welcome and you can see thier offical site for your reference. https://www.kanteenlife.com/
+# Kanteen Project
+This repository contains a faithful clone of the official Kanteenlife website, implemented using only HTML and CSS & JAVASCRIPT The goal of this project was to recreate the site's design and layout while maintaining responsive behavior across a wide range of screen sizes.
+
+Key details:
+- Built using raw HTML and CSS without additional frameworks.
+- Designed for mobile and desktop responsiveness.
+- Images and layout adapt between approximately 1000px and 800px screen widths.
+
+Contributions are welcome. If you would like to improve this project, please feel free to submit enhancements or review the official site for reference: https://www.kanteenlife.com/
